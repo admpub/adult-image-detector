@@ -1,4 +1,8 @@
 ### adult-image-detector
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/open-dating/adult-image-detector) 
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/opendating/adult-image-detector)](https://hub.docker.com/repository/docker/opendating/adult-image-detector)
+
+
 Use deep neural networks and other algos for detect nude images. 
 
 [Try detection](https://adult-image-detector.herokuapp.com/)
@@ -21,18 +25,18 @@ Result:
 ### Docker
 #### Run
 ```
-docker run -p 9191:9191 grinat0/adult-image-detector
+docker run -p 9191:9191 opendating/adult-image-detector
 ```
 
 #### Build
 ```
-git clone https://github.com/grinat/adult-image-detector --recursive
+git clone https://github.com/open-dating/adult-image-detector --recursive
 docker build -t adult-image-detector .
 ```
 
 #### Development
 ```
-git clone https://github.com/grinat/adult-image-detector --recursive
+git clone https://github.com/open-dating/adult-image-detector --recursive
 cd docker/dev
 docker-compose up
 ```
@@ -44,7 +48,9 @@ docker-compose up
 ```
 
 ### Install to heroku
-Fork, create app and change stack to container
+Use deploy button or:
+
+fork, create app and change stack to container
 ```
 heroku stack:set container
 ```
@@ -57,7 +63,7 @@ opencv 3.4.1
 ### Development without docker
 Recursive clone that repo:
 ```
-git clone https://github.com/grinat/adult-image-detector --recursive
+git clone https://github.com/open-dating/adult-image-detector --recursive
 ```
 or manually install submodules:
 ```
